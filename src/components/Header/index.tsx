@@ -8,7 +8,7 @@ const Header = () => {
                 <Link href="/food" className="text-[#F8F9FA]">FOOD</Link>
                 <Link href="/prices" className="text-[#F8F9FA]">PRICES</Link>
             </div>
-            <div className="flex justify-center flex-shrink-0">
+            <div className="flex justify-center flex-shrink-0 animate-pulse">
                 <a href="/">
                     <img 
                         src="/images/logo2.png" 
