@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 const Opening = () => {
     return (
-        <div className="bg-gradient-to-b p-6 lg:p-12 rounded-xl shadow-xl">
-            <div className="max-w-5xl mx-auto flex flex-col lg:flex-row justify-between space-y-12 lg:space-y-0 lg:space-x-10">
-                <div className="relative flex flex-col items-center justify-center w-96 h-96 rounded-full border-4 border-white shadow-xl mx-auto lg:mx-0">
+        <div className="bg-gradient-to-b p-6 lg:p-12 shadow-xl">
+            <div className="max-w-5xl mx-auto flex flex-col lg:flex-row justify-between space-y-12 lg:space-y-0 lg:space-x-0">
+                <div className="relative flex flex-col items-center justify-center w-96 h-96 rounded-full border-4 border-white shadow-xl mx-auto lg:mx-0 bg-[#1D4E89]">
                     <div className="absolute top-[20px] px-10 py-3 bg-white text-black font-bold text-2xl tracking-wide rounded shadow-lg border-2 border-black ">
                         OPENING HOURS
                     </div>

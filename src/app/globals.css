@@ -10,9 +10,9 @@ html, body {
 }
 
 
-* {
+/* * {
   background-color: #B22234;
-}
+} */
 
 
 body {
@@ -32,4 +32,44 @@ body {
 .order-link:hover {
   font-size: 2.5rem;
   animation-duration: 2s;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.logo-container:hover {
+  animation: pulse 1s infinite;
+}
+
+.menu-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #f8f9fa;
+  transition: color 0.3s ease;
+}
+
+.menu-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #1e3a8a;
+  transition: width 0.8s ease;
+}
+
+.menu-link:hover {
+  color: #1e3a8a;
+}
+
+.menu-link:hover::after {
+  width: 100%;
 }
