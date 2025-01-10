@@ -10,9 +10,14 @@ html, body {
 }
 
 
-/* * {
-  background-color: #B22234;
-} */
+/* Lägg detta i din global.css */
+body {
+  background-image: url('/webbpage.jpeg'); /* Uppdatera med rätt sökväg */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Gör så att bakgrunden inte scrollar */
+}
+
 
 
 body {
@@ -72,4 +77,32 @@ body {
 
 .menu-link:hover::after {
   width: 100%;
+}
+
+.neon-text {
+  text-shadow: 
+      0 0 3px #ffffff, 
+      0 0 6px #ffffff, 
+      0 0 10px #ff0000, 
+      0 0 15px #ff0000, 
+      0 0 20px #ff0000;
+  animation: neon-flicker 1.5s infinite alternate;
+}
+
+
+/* Animation för att ge en realistisk "flicker"-effekt */
+@keyframes neon-flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      text-shadow: 
+          0 0 5px #ffffff, 
+          0 0 10px #ffffff, 
+          0 0 20px #ff0000, 
+          0 0 30px #ff0000, 
+          0 0 40px #ff0000, 
+          0 0 50px #ff0000, 
+          0 0 75px #ff0000;
+  }
+  20%, 24%, 55% {
+      text-shadow: none;
+  }
 }
