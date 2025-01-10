@@ -1,49 +1,63 @@
+'use client'
+import React, { useState, useEffect } from 'react';
+
 const Footer = () => {
-    return (
-        <footer className="text-white py-8 text-sm bg-[#1D4E89]">
-            <div className="container mx-auto px-6 text-center rounded-xl">
-                <div className="mb-6">
-                <div className="flex justify-center -mb-10 pl-16 bg-transparent text-lg rotate-12">
-                    <a
-                        href="https://www.foodora.se/restaurant/g24m/recos-chicken-and-waffles" 
-                        className="order-link"
-                    >
-                        Order!
-                    </a>
-                </div>
-                    <a href="/" className="flex justify-center">
-                        <img 
-                            src="/images/logo.webp" 
-                            alt="Reco's Chicken and Waffles Logo" 
-                            width={220} 
-                            height={75} 
-                        />
-                    </a>
-                    <p className="text-sm text-gray-300 mt-2 max-w-xs mx-auto">Your new favorite American all day brunch spot in Stockholm!</p>
-                </div>
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 300) { // Visa pilen efter 300 pixlar scroll
+        setShowScrollToTop(true);
+      } else {
+        setShowScrollToTop(false);
+      }
+    };
 
-                <div className="flex justify-center space-x-12 mb-6">
-                    <div className="text-center">
-                        <p className="text-sm text-gray-300">Address: Bondegatan 13, 116 23 Stockholm</p>
-                        <p className="text-sm text-gray-300">Phone: 08 640 02 71</p>
-                    </div>
-                </div>
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-                <div className="border-t-2 border-[#1D4E89] pt-4 pb-4">
-                    <div className="flex justify-center space-x-4 mb-4">
-                        <a href="https://www.instagram.com/explore/locations/343401515524376/recos-chicken-and-waffles/" className="text-xl hover:text-white">
-                            <img src="/images/instag.png" alt="Instagram" width={24} height={24} />
-                        </a>
-                        <a href="https://www.tiktok.com/discover/reco-chicken-waffle-stockholm" className="text-xl">
-                            <img className="fill-white" src="/images/tik-tok.png" alt="TikTok" width={24} height={24} />
-                        </a>
-                    </div>
-                    <p className="text-sm text-white font-extralight">© 2025 Reco's Chicken and Waffles. All Rights Reserved.</p>
-                </div>
-            </div>
-        </footer>
-    );
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  return (
+    <footer className="bg-[#1D4E89] py-12 text-white text-sm md:text-base">
+      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <div className="flex flex-col items-start md:items-center">
+          <a href="/" className="flex justify-center mb-4">
+            <img src="/images/logo.webp" alt="Reco's Logo" width={180} height={60} />
+          </a>
+          <p className="font-medium text-center md:text-left">Stockholms nya favorit för amerikansk brunch hela dagen!</p>
+        </div>
+
+        <div className="text-gray-300 text-center">
+          <p>Bondegatan 13, 116 23 Stockholm</p>
+          <p>08 640 02 71</p>
+        </div>
+
+        <div className="flex justify-center md:justify-end space-x-6">
+          <a href="https://www.instagram.com" className="hover:text-[#B22234] transition-colors duration-300" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="https://www.tiktok.com" className="hover:text-[#B22234] transition-colors duration-300" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-tiktok"><path d="M9 2h2a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H9v-5.117c0-.623.284-1.203.765-1.614l5.117-4.279v.059l-5.117 4.279a1.99 1.99 0 0 1-.765 1.614V2zM17 6h-3a1 1 0 0 0-1 1v3h1a1 1 0 0 1 1 1v3h-3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1z"></path></svg>
+          </a>
+        </div>
+      </div>
+      <div className="border-t border-[#B22234] pt-6 mt-6 text-center text-gray-300">
+        <p>© 2025 Reco's Chicken and Waffles. Alla rättigheter reserverade.</p>
+      </div>
+       {showScrollToTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 bg-[#B22234] text-white p-3 rounded-full hover:bg-[#911827] transition-colors duration-300 z-50"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        </button>
+      )}
+    </footer>
+  );
 };
 
 export default Footer;
