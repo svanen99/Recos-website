@@ -9,21 +9,16 @@ html, body {
   height: 100%;
 }
 
-
-/* Lägg detta i din global.css */
 body {
-  background-image: url('/webbpage.jpeg'); /* Uppdatera med rätt sökväg */
+  background-image: url('/webbpage.jpeg'); 
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Gör så att bakgrunden inte scrollar */
+  background-attachment: fixed; 
 }
-
-
 
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
 
 .order-link {
   font-family: 'Bangers', cursive;
@@ -90,7 +85,6 @@ body {
 }
 
 
-/* Animation för att ge en realistisk "flicker"-effekt */
 @keyframes neon-flicker {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
       text-shadow: 
