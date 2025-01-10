@@ -1,8 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  background-color: #B22234;
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
 }
 
+/* .neon-text {
+    color: #ef281a;
+    text-shadow: 
+      0 0 10px #ef281a, 
+      0 0 20px #ef281a, 
+      0 0 30px #ef281a, 
+      0 0 40px #ef281a, 
+      0 0 60px #ef281a;
+    animation: neon-flicker 1.5s infinite alternate;
+  }
+  
+  @keyframes neon-flicker {
+    0%, 50%, 100% {
+      text-shadow: 
+        0 0 10px #ef281a, 
+        0 0 20px #ef281a, 
+        0 0 30px #ef281a, 
+        0 0 40px #ef281a, 
+        0 0 60px #ef281a;
+    }
+    50% {
+      text-shadow: 
+        0 0 15px #ef281a, 
+        0 0 25px #ef281a, 
+        0 0 35px #ef281a, 
+        0 0 50px #ef281a, 
+        0 0 80px #ef281a;
+    }
+  }
+   */
+  

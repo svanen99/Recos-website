@@ -1,8 +1,9 @@
-export default function PricePage() {
+import Prices from "@/components/Prices";
+
+const PricesPage = () => {
     return (
-        <div>
-            <h1>About Us</h1>
-            <p>Welcome to the Price page!</p>
-        </div>
+        <Prices />
     );
 }
+
+export default PricesPage;

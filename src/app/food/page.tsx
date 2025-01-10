@@ -1,8 +1,10 @@
-export default function FoodPage() {
+const FoodPage = () => {
     return (
         <div>
-            <h1>About Us</h1>
+            <h1>Our Food</h1>
             <p>Welcome to the Food page!</p>
         </div>
     );
 }
+
+export default FoodPage;
