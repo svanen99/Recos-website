@@ -1,10 +1,10 @@
+import FoodHero from "@/components/FoodHero";
+
 const FoodPage = () => {
     return (
-        <div>
-            <h1>Our Food</h1>
-            <p>Welcome to the Food page!</p>
-        </div>
+       <>
+        <FoodHero />
+       </>
     );
 }
-
 export default FoodPage;
