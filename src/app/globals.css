@@ -14,11 +14,14 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed; 
-}
-
-body {
   font-family: 'Montserrat', sans-serif;
 }
+
+/* .img {
+    width: "28";
+    height: "28";
+    src: "/images/tik-tok.png";
+} */
 
 .order-link {
   font-family: 'Bangers', cursive;

@@ -3,13 +3,13 @@ import React from "react";
 
 const Menu = () => {
   return (
-    <div className="bg-[#B22234] text-[#B22234] p-8 md:p-16 lg:p-24 font-poppins relative">
+    <div className="bg-[#e8e0e1] text-[#B22234] p-8 md:p-16 lg:p-24 font-poppins relative">
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold bg-[#F8F9FA] text-[#B22234] border-2 border-[#B22234] p-2 rounded-lg">
             Food <span className="text-[#1D4E89]">PRICES</span>
           </h1>
-          <p className="text-lg text-[#F8F9FA] mt-2 italic">
+          <p className="text-lg text-[#B22234] mt-2 italic">
             Chicken & Waffles do go together...
           </p>
         </div>
@@ -151,7 +151,7 @@ const Menu = () => {
           <img
             src="/images/screen5.jpg"
             alt="Menu Highlight"
-            className="object-cover rounded-tl-[50px]"
+            className="object-cover rounded-tl-[50px] border-2 border-[#B22234]"
           />
           <div className="absolute top-4 right-4 bg-[#B22234] text-white font-bold px-4 py-2 rounded-lg">
             <Link href="/food">

@@ -39,7 +39,7 @@ const Header = () => {
                 {['HOME', 'MENU', 'PRICES'].map((text, index) => (
                     <Link
                         key={index}
-                        href={`/${text.toLowerCase()}`}
+                        href={text === 'HOME' ? '/' : `/${text.toLowerCase()}`}
                         className="group relative text-[#F8F9FA] hover:text-[#1E3A8A] transition-colors duration-300 hover:font-semibold"
                     >
                         {text}

@@ -6,7 +6,7 @@ const Footer = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 300) { // Visa pilen efter 300 pixlar scroll
+      if (window.pageYOffset > 300) {
         setShowScrollToTop(true);
       } else {
         setShowScrollToTop(false);
@@ -22,31 +22,37 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#1D4E89] py-12 text-white text-sm md:text-base">
+    <footer className="bg-[#1D4E89] py-12 text-white text-sm md:text-base border-t-2 border-[#B22234]">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-        <div className="flex flex-col items-start md:items-center">
-          <a href="/" className="flex justify-center mb-4">
-            <img src="/images/logo.webp" alt="Reco's Logo" width={180} height={60} />
-          </a>
-          <p className="font-medium text-center md:text-left">Stockholms nya favorit för amerikansk brunch hela dagen!</p>
-        </div>
 
         <div className="text-gray-300 text-center">
           <p>Bondegatan 13, 116 23 Stockholm</p>
           <p>08 640 02 71</p>
         </div>
+        <div className="flex flex-col items-start md:items-center">
+          <a href="/" className="flex justify-center mb-4">
+            <img src="/images/logo.webp" alt="Reco's Logo" width={180} height={60} />
+          </a>
+          <p className="font-medium text-center md:text-center">Your new favorite American all day brunch spot right in the heart of Stockholm! </p>
+        </div>
 
         <div className="flex justify-center md:justify-end space-x-6">
-          <a href="https://www.instagram.com" className="hover:text-[#B22234] transition-colors duration-300" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/explore/locations/343401515524376/recos-chicken-and-waffles/" className="hover:text-[#B22234] transition-colors duration-300" target="_blank" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
           </a>
-          <a href="https://www.tiktok.com" className="hover:text-[#B22234] transition-colors duration-300" target="_blank" rel="noopener noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-tiktok"><path d="M9 2h2a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H9v-5.117c0-.623.284-1.203.765-1.614l5.117-4.279v.059l-5.117 4.279a1.99 1.99 0 0 1-.765 1.614V2zM17 6h-3a1 1 0 0 0-1 1v3h1a1 1 0 0 1 1 1v3h-3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1z"></path></svg>
-          </a>
+          <a href="https://www.tiktok.com/@recoschickenandwaffles" className="hover:text-[#B22234] transition-colors duration-300" target="_blank" rel="noopener noreferrer">
+          <img
+            src="/images/tik-tok.png"
+            alt="TikTok Logo"
+            width="28"
+            height="28"
+            style={{ filter: 'brightness(0) invert(1)' }}
+          />
+        </a>
         </div>
       </div>
-      <div className="border-t border-[#B22234] pt-6 mt-6 text-center text-gray-300">
-        <p>© 2025 Reco's Chicken and Waffles. Alla rättigheter reserverade.</p>
+      <div className="pt-6 mt-6 text-center text-gray-300">
+      <p>© 2025 Reco's Chicken and Waffles. All rights reserved.</p>
       </div>
        {showScrollToTop && (
         <button
