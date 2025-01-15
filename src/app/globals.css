@@ -17,6 +17,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* .img {
     width: "28";
     height: "28";
@@ -44,10 +48,6 @@ body {
   50% {
     transform: scale(1.05);
   }
-}
-
-.logo-container:hover {
-  animation: pulse 1s infinite;
 }
 
 .menu-link {
