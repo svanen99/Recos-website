@@ -16,7 +16,7 @@ const Opening = () => {
                     >
                         OPENING HOURS
                     </div>
-                    <ul className="text-white text-center space-y-4 text-lg mt-16">
+                    <ul className="text-[#F8F9FA] text-center space-y-4 text-lg mt-16">
                         <li>
                             <span className="font-bold">MON - TUE</span> CLOSED
                         </li>
