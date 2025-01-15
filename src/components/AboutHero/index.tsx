@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const AboutHero = () => {
     return (
         <div className="bg-white px-6 py-12 md:px-16 lg:px-24 font-serif rounded-lg shadow-lg m-6 border-t-8 border-[#ff3130]">
-            <div className="max-w-4xl mx-auto space-y-12 text-lg leading-relaxed">
+            <div className="max-w-4xl mx-auto space-y-12 text-lg leading-relaxed font-Montserrat">
                 <div className="relative flex justify-center">
                     <div className="absolute w-48 h-48 bg-[#fef7e8] rounded-full -top-12 -z-10"></div>
                     <Image
@@ -44,9 +45,11 @@ const AboutHero = () => {
                     soul-satisfying flavors of American Southern cuisine right here in Sweden.
                 </p>
                 <div className="flex justify-center mt-8">
+                <Link href="/food">
                     <button className="bg-[#004aad] text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-[#003580] transition duration-300">
                         Explore Our Menu
                     </button>
+                </ Link >
                 </div>
             </div>
         </div>
