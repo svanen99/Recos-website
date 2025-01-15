@@ -3,19 +3,23 @@ import React from "react";
 
 const Menu = () => {
   return (
-    <div className="bg-[#e8e0e1] text-[#B22234] p-8 md:p-16 lg:p-24 font-poppins relative">
+    <div className="text-[#B22234] p-8 md:p-12 lg:p-12 font-poppins relative">
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold bg-[#F8F9FA] text-[#B22234] border-2 border-[#B22234] p-2 rounded-lg">
-            Food <span className="text-[#1D4E89]">PRICES</span>
-          </h1>
+        <h1 className="text-5xl font-bold text-[#B22234] p-2 rounded-lg mb-3">
+                        Food <span className="text-[#1D4E89] underline decoration-wavy">PRICES</span>
+                </h1>
+                <div className="flex justify-center mb-10">
+                    <span className="h-px w-1/3 bg-[#B22234]"></span>
+                    <span className="h-px w-1/3 text-lg text-[#B22234] -mt-3 italic">Chicken & Waffles do go together...</span>
+                    <span className="h-px w-1/3 bg-[#B22234]"></span>
+                </div>
           <p className="text-lg text-[#B22234] mt-2 italic">
-            Chicken & Waffles do go together...
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-          <div className="bg-white rounded-2xl p-8 shadow-md">
-            <h2 className="text-3xl font-semibold text-[#1D4E89] mb-6 border-b-2 border-[#B22234] pb-2">
+          <div className="bg-white rounded-2xl p-8 shadow-md border-2 border-[#ff3130]">
+            <h2 className="text-3xl font-semibold text-[#1D4E89] mb-6 border-b-2 border-[#ff3130] pb-2">
               Foods
             </h2>
             <ul className="space-y-4">
@@ -85,8 +89,8 @@ const Menu = () => {
               </li>
             </ul>
           </div>
-          <div className="bg-white rounded-2xl p-8 shadow-md">
-            <h2 className="text-3xl font-semibold text-[#1D4E89] mb-6 border-b-2 border-[#B22234] pb-2">
+          <div className="bg-white rounded-2xl p-8 shadow-md border-2 border-[#ff3130]">
+            <h2 className="text-3xl font-semibold text-[#1D4E89] mb-6 border-b-2 border-[#ff3130] pb-2">
               Drinks
             </h2>
             <ul className="space-y-4">
@@ -112,7 +116,7 @@ const Menu = () => {
               </li>
             </ul>
           </div>
-          <div className="bg-white rounded-2xl p-8 shadow-md md:col-span-2">
+          <div className="bg-white rounded-2xl p-8 shadow-md md:col-span-2 border-2 border-[#ff3130]">
             <h2 className="text-3xl font-semibold text-[#1D4E89] mb-6 border-b-2 border-[#B22234] pb-2">
               Extra Toppings & Sauces - All 20kr/each
             </h2>

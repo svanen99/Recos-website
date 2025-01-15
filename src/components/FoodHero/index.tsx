@@ -1,7 +1,9 @@
-'use client';
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
-import { useState } from "react";
+import { FaTag } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
+
 
 const FoodHero = () => {
     const menuItems = [
@@ -36,28 +38,40 @@ const FoodHero = () => {
     };
 
     return (
-        <>
-            <div className="max-w-6xl mx-auto p-6">
-                <h2 className="text-4xl font-bold text-center mb-8 text-[#B22234] font-Montserrat tracking-wider">FOOD MENU</h2>
-                
-                <div className="flex justify-center mb-10">
+        <div className="bg-gradient-to-b from-white to-gray-100 py-12">
+            <div className="max-w-7xl mx-auto px-6 text-center">
+                <h1 className="text-5xl font-bold text-[#B22234] p-2 rounded-lg mb-3">
+                    Food <span className="underline decoration-wavy text-[#1D4E89]">MENU</span>
+                </h1>
+                <div className="flex justify-center mb-20 mt-5">
                     <span className="h-px w-1/3 bg-[#B22234]"></span>
-                    <span className="mx-4 text-sm text-[#FEFEFC] font-light font-poppins">SOUTHERN GOODNESS</span>
+                    <span className="h-px w-1/3 text-lg text-[#B22234] -mt-3 italic">Soul-satisfying flavors of American Southern cuisine right here in Sweden.</span>
                     <span className="h-px w-1/3 bg-[#B22234]"></span>
                 </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                     {menuItems.map((item, index) => (
-                        <div key={index} 
-                             className="flex flex-col items-center text-center border-2 border-[#ff3130] p-4 bg-white rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer"
-                             onClick={() => openModal(item.src)}
-                             aria-label={`Open modal for ${item.title}`}>
-                            <div className="rounded-full overflow-hidden w-40 h-40 mb-4">
-                                <Image src={item.src} alt={item.alt} width={250} height={200} className="object-cover" />
+                        <div 
+                            key={index} 
+                            className="group bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer"
+                            onClick={() => openModal(item.src)}
+                        >
+                            <div className="relative w-full h-56">
+                                <Image 
+                                    src={item.src} 
+                                    alt={item.alt} 
+                                    layout="fill" 
+                                    objectFit="cover" 
+                                    className="group-hover:brightness-75 transition-all duration-300"
+                                />
                             </div>
-                            <h3 className="text-xl font-semibold text-gray-800 font-poppins">{item.title}</h3>
-                            <p className="text-gray-500 text-sm font-poppins">{item.description}</p>
-                            <p className="text-lg font-bold font-poppins text-[#004aad] mt-2">{item.price}</p>
+                            <div className="p-6">
+                                <h3 className="text-2xl font-bold text-gray-800 mb-2">{item.title}</h3>
+                                <p className="text-gray-600 mb-4">{item.description}</p>
+                                <div className="flex items-center justify-center gap-2 text-xl font-semibold text-blue-600">
+                                    <span>{item.price}</span>
+                                    <FaTag className="text-green-400" />
+                                </div>
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -65,31 +79,32 @@ const FoodHero = () => {
 
             {isOpen && selectedImage && (
                 <div 
-                    className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 backdrop-blur-md transition-opacity duration-300"
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 backdrop-blur-sm transition-opacity duration-300"
                     onClick={closeModal}
                 >
                     <div 
-                        className="relative p-4 bg-white rounded-lg shadow-xl max-w-2xl w-full" 
+                        className="relative bg-white rounded-lg shadow-2xl overflow-hidden max-w-3xl w-full"
                         onClick={(e) => e.stopPropagation()}
                     >
                         <Image 
                             src={selectedImage} 
                             alt="Large view" 
+                            layout="responsive" 
                             width={800} 
                             height={600} 
-                            className="rounded-lg shadow-lg object-contain"
+                            className="object-contain"
                         />
                         <button 
                             onClick={closeModal} 
-                            className="absolute top-3 right-3 text-white bg-[#004aad] p-3 rounded-full hover:bg-[#ff3130] transition-colors duration-200 focus:outline-none"
+                            className="absolute top-4 right-4 text-white bg-red-500 p-3 rounded-full hover:bg-red-600 transition-colors duration-300"
                             aria-label="Close modal"
                         >
-                            <FaTimes size={20} />
+                            <FaTimes size={24} />
                         </button>
                     </div>
                 </div>
             )}
-        </>
+        </div>
     );
 };
 
