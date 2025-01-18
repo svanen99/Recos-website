@@ -4,9 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  background-color: #B22234;
-}
 
 body {
   font-family: 'Montserrat' , arial;
