@@ -4,7 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  height: 100%;
+}
 
 body {
-  font-family: 'Montserrat' , arial;
+  background-image: url('/webbpage.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  font-family: 'Montserrat', sans-serif;
 }
