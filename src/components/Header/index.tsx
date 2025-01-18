@@ -36,7 +36,7 @@ const Header = () => {
         const isActive = pathname === linkPath || (pathname === '/' && linkPath === '/');
         return isActive
             ? 'text-[#F8F9FA] font-semibold'
-            : 'text-[#F8F9FA] hover:text-[#F8F9FA]] hover:font-semibold';
+            : 'text-[#F8F9FA] hover:text-[#F8F9FA] hover:font-semibold';
     };
 
     return (
@@ -55,7 +55,7 @@ const Header = () => {
                         >
                             {text}
                             <span
-                                className={`absolute left-0 bottom-[-3px] h-[2px] w-0 bg-[#F8F9FA] transition-all duration-300 
+                                className={`absolute left-0 bottom-[-3px] h-[2px] w-0 bg-[#1E3A8A] transition-all duration-300 
                                 group-hover:w-full ${pathname === linkPath ? 'w-full' : ''}`}
                             ></span>
                         </Link>
