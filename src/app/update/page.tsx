@@ -1,11 +1,11 @@
-const UpdatePage = () => {
+import Update from "@/components/Update";
+
+const Updatepage = () => {
     return (
-        <>
-            <div>
-                hello
-            </div>
-        </>
-    )
+       <>
+        <Update />
+       </>
+    );
 }
 
-export default UpdatePage;
+export default Updatepage;
