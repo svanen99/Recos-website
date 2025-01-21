@@ -1,17 +1,32 @@
 'use client';
-import Link from 'next/link';
 
 const Opening = () => {
+    const text = "Reco´s Chicken & Waffles";
+
     return (
         <div
             className="relative bg-cover bg-center min-h-screen p-6 lg:p-12 shadow-xl"
-            style={{
-                backgroundImage: "url('/images/webbpage.jpeg')",
-            }}>
+            style={{ backgroundImage: "url('/images/webbpage.jpeg')" }}
+        >
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
-            <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center space-y-12 lg:space-y-0 lg:space-x-12">
+            <div className="relative z-10 text-center text-[#F8F9FA] mt-24">
+            <h1
+                className="text-7xl font-bold font-playfair animate-glide-in-right text-white"
+                >
+                {text}
+            </h1>
+                <p className="mt-4 text-lg">Click the waffles to explore!</p>
+                <div className="mt-8 animate-pulse">
+                    <button
+                        src="/food"
+                        alt="Waffles"
+                        className="w-32 h-32 mx-auto"
+                    />
+                </div>
+            </div>
+            <div className="relative z-10 max-w-7xl mx-auto mt-24 flex flex-col lg:flex-row justify-between items-start lg:items-center space-y-12 lg:space-y-0 lg:space-x-12">
                 <div className="relative flex flex-col items-center justify-center w-96 h-96 rounded-lg border-4 border-[#B22234] shadow-xl p-6">
-                    <div 
+                    <div
                         className="absolute top-4 px-10 py-3 text-3xl font-bold text-[#F8F9FA] tracking-wider rounded neon-text cursor-pointer"
                     >
                         OPENING HOURS

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +8,14 @@
 
 html, body {
   height: 100%;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif !important;
+}
+
+.custom-img {
+  filter: hue-rotate(170deg) saturate(15) brightness(1.1);
 }
 
 body {
@@ -20,12 +29,6 @@ body {
 * {
   font-family: 'Montserrat', sans-serif;
 }
-
-/* .img {
-    width: "28";
-    height: "28";
-    src: "/images/tik-tok.png";
-} */
 
 .order-link {
   font-family: 'Bangers', cursive;
@@ -102,4 +105,21 @@ body {
   20%, 24%, 55% {
       text-shadow: none;
   }
+}
+
+@keyframes glide-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(50px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+
+.animate-glide-in-right {
+  animation: glide-in-right 1.5s ease-out forwards;
+  animation-delay: 0.3s;
+  /* text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7); */
 }

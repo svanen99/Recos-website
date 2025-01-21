@@ -33,21 +33,27 @@ const StatusUpdate = () => {
     <div className="min-h-screen flex flex-col items-center bg-gradient-to-br from-gray-100 via-white to-gray-200 p-8">
       <section className="bg-white rounded-2xl shadow-xl w-full max-w-3xl p-10 border-[#B22234] border-2">
         <div className="flex flex-col items-center mb-8">
-          <img src="/images/logo.webp" alt="Reco's Chicken and Waffles Logo" className="h-52 w-auto mb-4" />
-          <h1 className="text-4xl font-extrabold text-gray-800 text-center">Suggest a Location</h1>
-          <p className="text-lg text-gray-600 text-center mt-4">
-            Hello everyone!
+          <div className="">
+            <img src="/images/destination.gif" alt="Reco's Chicken and Waffles Logo" className="h-32 w-auto mb-4 custom-img" />
+          </div>
+
+          <h1 className="text-5xl font-extrabold text-[#B22234] mb-6 p-4 border-2 border-[#B22234] rounded-lg bg-white shadow-md transition-transform duration-300 hover:scale-105">
+            New Location Needed!
+          </h1>
+            <h2 className='text-xl'>Hello everyone! </h2>
+          <p className="text-lg text-gray-600 text-left mt-4">
             <br />
             We’re looking for a new home for Reco’s Chicken and Waffles, and we’d love your help! 
             If you know of a location that meets the following criteria, please let us know:
           </p>
-          <ul className="text-gray-600 text-sm mt-4 space-y-2">
-            <li>- Close to the city center (ideally within 5 km)</li>
-            <li>- Affordable rent (under 20,000 kr/month)</li>
+          <ul className="text-gray-600 text-sm mt-4 space-y-2 flex flex-col text-left">
+            <li>- Close to the city center</li>
+            <li>- Affordable rent</li>
             <li>- Alcohol license or possibility to acquire one</li>
             <li>- Flexible opening hours to serve our amazing customers</li>
           </ul>
-          <p className="text-lg text-gray-600 text-center mt-4">
+          
+          <p className="text-lg text-gray-600 text-left mt-4">
             Your input could make a huge difference. Let’s find the perfect spot together! ❤️
           </p>
         </div>
@@ -98,9 +104,9 @@ const StatusUpdate = () => {
 
         <button
           onClick={handleSubmit}
-          className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold py-4 rounded-lg mt-6 hover:scale-105 focus:ring-2 focus:ring-blue-400 transition-transform duration-200"
+          className="w-full text-[#1D4E89] border-2 border-[#B22234] text-xl py-4 rounded-lg mt-6 hover:scale-105 focus:ring-2 transition-transform duration-200"
         >
-          Send Your Tip
+          Send Your Tip!
         </button>
 
         <p className="text-center text-sm text-gray-500 mt-4">
