@@ -1,8 +1,9 @@
+import Contact from "@/components/ContactHero";
+
 const ContactPage = () => {
     return (
         <div>
-            <h1>Contact us</h1>
-            <p>Welcome to the Contact page!</p>
+            <Contact/>
         </div>
     );
 }
