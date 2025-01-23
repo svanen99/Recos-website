@@ -13,12 +13,12 @@ export default {
         foreground: "var(--foreground)",
       },
       animation: {
-        'stack-in': 'stack-in 0.1s ease-out', // Kan tas bort om den inte används
+        'stack-in': 'stack-in 0.01s ease-out', 
       },
       keyframes: {
         'stack-in': {
           '0%': {
-            transform: 'translateY(10px)',
+            transform: 'translateY(30px)',
             opacity: 0,
           },
           '100%': {
@@ -28,7 +28,7 @@ export default {
         },
       },
       fontFamily: {
-        playfair: ['"Playfair Display"', 'serif'], // Lägger till Playfair
+        playfair: ['"Playfair Display"', 'serif'], 
       },
     },
   },

@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { FaTag } from "react-icons/fa";
-import { FaTimes } from "react-icons/fa";
+// import { FaTag } from "react-icons/fa";
+// import { FaTimes } from "react-icons/fa";
 
 
 const FoodHero = () => {
@@ -69,7 +69,7 @@ const FoodHero = () => {
                                 <p className="text-gray-600 mb-4">{item.description}</p>
                                 <div className="flex items-center justify-center gap-2 text-xl font-semibold text-blue-600">
                                     <span>{item.price}</span>
-                                    <FaTag className="text-green-400" />
+                                    {/* <FaTag className="text-green-400" /> */}
                                 </div>
                             </div>
                         </div>
@@ -99,7 +99,7 @@ const FoodHero = () => {
                             className="absolute top-4 right-4 text-white bg-red-500 p-3 rounded-full hover:bg-red-600 transition-colors duration-300"
                             aria-label="Close modal"
                         >
-                            <FaTimes size={24} />
+                            {/* <FaTimes size={24} /> */}
                         </button>
                     </div>
                 </div>
