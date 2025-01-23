@@ -9,7 +9,6 @@ const Opening = () => {
       style={{ backgroundImage: "url('/images/webbpage.jpeg')" }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
-      {/* Animate all content sections with a slight delay */}
       <div className="relative z-10 text-center text-white mt-24 animate-in delay-0">
         <h1 className="text-8xl font-semibold font-playfair">
           {text}
