@@ -1,8 +1,11 @@
-export default function ContactPage() {
+import Contact from "@/components/ContactHero";
+
+const ContactPage = () => {
     return (
         <div>
-            <h1>About Us</h1>
-            <p>Welcome to the Contact page!</p>
+            <Contact/>
         </div>
     );
 }
+
+export default ContactPage;
