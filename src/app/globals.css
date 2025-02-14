@@ -162,3 +162,30 @@ body {
 .hamburger-btn.open span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
+.menu-link {
+  display: inline-block;
+  padding: 16px 32px;
+  background-color: rgba(178, 34, 52, 0.9); 
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600; 
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+}
+
+.menu-link:hover {
+  background-color: rgba(178, 34, 52, 1);
+  transform: scale(1.02); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.image-container {
+  /* ... andra stilar ... */
+  position: absolute;
+  bottom: 20px; /* Justera detta värde */
+  right: 20px; /* Justera detta värde */
+  /* transform: translateY(-50%);  Om du vill centrera vertikalt */
+}
