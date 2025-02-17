@@ -10,10 +10,11 @@ const StatusUpdate = () => {
     opening: '',
   });
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setCriteria({ ...criteria, [name]: value });
   };
+  
 
   const handleSubmit = () => {
     const mailtoLink = `mailto:info@recoschickenandwaffles.com?subject=Tip%20for%20a%20location&body=Hi!%0D%0A%0D%0A
