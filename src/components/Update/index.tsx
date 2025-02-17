@@ -10,12 +10,11 @@ const StatusUpdate = () => {
     opening: '',
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value } = e.target as { name: keyof typeof criteria; value: string };
     setCriteria({ ...criteria, [name]: value });
   };
   
-
   const handleSubmit = () => {
     const mailtoLink = `mailto:info@recoschickenandwaffles.com?subject=Tip%20for%20a%20location&body=Hi!%0D%0A%0D%0A
       Here is some info I have for you:%0D%0A%0D%0A
@@ -71,7 +70,7 @@ const StatusUpdate = () => {
                 id={name}
                 type={type}
                 name={name}
-                value={criteria[name]}
+                value={criteria[name as keyof typeof criteria]} 
                 onChange={handleInputChange}
                 className="w-full p-4 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder={placeholder}
@@ -88,7 +87,7 @@ const StatusUpdate = () => {
               <select
                 id={name}
                 name={name}
-                value={criteria[name]}
+                value={criteria[name as keyof typeof criteria]}
                 onChange={handleInputChange}
                 className="w-full p-4 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
