@@ -1,9 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-// import { FaTag } from "react-icons/fa";
-// import { FaTimes } from "react-icons/fa";
-
 
 const FoodHero = () => {
     const menuItems = [
@@ -43,9 +40,11 @@ const FoodHero = () => {
                 <h1 className="text-5xl font-bold text-[#B22234] p-2 rounded-lg mb-3">
                     Food <span className="underline decoration-wavy text-[#1D4E89]">MENU</span>
                 </h1>
-                <div className="flex justify-center mb-20 mt-5">
+                <div className="flex flex-col items-center gap-2 mb-6">
                     <span className="h-px w-1/3 bg-[#B22234]"></span>
-                    <span className="h-px w-1/3 text-lg text-[#B22234] -mt-3 italic">Soul-satisfying flavors of American Southern cuisine right here in Sweden.</span>
+                    <p className="text-lg sm:text-base text-[#B22234] italic leading-tight mt-1">
+                        Soul-satisfying flavors of Southern American cuisine right here in Sweden.
+                    </p>
                     <span className="h-px w-1/3 bg-[#B22234]"></span>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -69,7 +68,6 @@ const FoodHero = () => {
                                 <p className="text-gray-600 mb-4">{item.description}</p>
                                 <div className="flex items-center justify-center gap-2 text-xl font-semibold text-blue-600">
                                     <span>{item.price}</span>
-                                    {/* <FaTag className="text-green-400" /> */}
                                 </div>
                             </div>
                         </div>
@@ -99,7 +97,6 @@ const FoodHero = () => {
                             className="absolute top-4 right-4 text-white bg-red-500 p-3 rounded-full hover:bg-red-600 transition-colors duration-300"
                             aria-label="Close modal"
                         >
-                            {/* <FaTimes size={24} /> */}
                         </button>
                     </div>
                 </div>
