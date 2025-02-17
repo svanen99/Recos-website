@@ -183,9 +183,16 @@ body {
 }
 
 .image-container {
-  /* ... andra stilar ... */
   position: absolute;
-  bottom: 20px; /* Justera detta värde */
-  right: 20px; /* Justera detta värde */
-  /* transform: translateY(-50%);  Om du vill centrera vertikalt */
+  bottom: 20px;
+  right: 20px; 
+}
+
+.tiktok-logo {
+  filter: brightness(0) invert(1); 
+  transition: filter 0.3s ease; 
+}
+
+.tiktok-logo:hover {
+  filter: brightness(0) invert(1) sepia(100%) saturate(500%) hue-rotate(-50deg) brightness(0) contrast(1) sepia(1) saturate(1);
 }

@@ -11,7 +11,7 @@ const Menu = () => {
           </h1>
           <div className="flex flex-col items-center gap-2 mb-6">
           <span className="h-px w-1/3 bg-[#B22234]"></span>
-          <span className="block w-full text-base sm:text-lg md:text-xl lg:text-2xl text-[#B22234] italic text-center leading-tight mt-1">
+          <span className="text-lg sm:text-base text-[#B22234] italic leading-tight mt-1">
             Chicken & Waffles do go together...
           </span>
           <span className="h-px w-1/3 bg-[#B22234]"></span>

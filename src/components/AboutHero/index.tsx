@@ -3,16 +3,16 @@ import Link from "next/link";
 
 const AboutHero = () => {
     return (
-        <div className="bg-white px-6 py-12 md:px-16 lg:px-24 font-serif rounded-lg shadow-lg m-6 border-t-8 border-[#ff3130]">
+        <div className="px-6 py-12 md:px-16 lg:px-24 font-serif rounded-s m-6 border-t-8 border-[#ff3130]">
             <div className="max-w-4xl mx-auto space-y-12 text-lg leading-relaxed font-Montserrat">
                 <div className="relative flex justify-center">
-                    <div className="absolute w-48 h-48 bg-[#fef7e8] rounded-full -top-12 -z-10"></div>
+                    <div className="absolute w-48 h-48 rounded-full -top-12 -z-10"></div>
                     <Image
                         src="/images/alabama.png"
                         width={150}
                         height={200}
                         alt="Alabama"
-                        className="rounded-full border-4 border-[#ff3130] shadow-lg"
+                        className="rounded-full border-4 border-[#ff3130] shadow-xl"
                     />
                 </div>
                 <h1 className="text-4xl font-bold text-center text-[#004aad]">
