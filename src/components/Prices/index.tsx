@@ -96,57 +96,43 @@ const Menu = () => {
               </li>
             </ul>
           </div>
-          <div className="bg-white rounded-2xl p-8 shadow-md md:col-span-2 border-2 border-[#ff3130]">
-            <h2 className="text-3xl font-semibold text-[#1D4E89] mb-6 border-b-2 border-[#ff3130] pb-2">
-              Extra Toppings & Sauces - All 20kr/each
-            </h2>
-            <ul className="space-y-4">
-              <li className="flex justify-between items-center">
-                <span>Maple Syrup</span>
-              </li>
-              <li className="flex justify-between items-center">
-                <span>Jam / Sylt</span>
-              </li>
-              <li className="flex justify-between items-center">
-                <span>Chocolate Sauce</span>
-              </li>
-              <li className="flex justify-between items-center">
-                <span>Ice Cream</span>
-              </li>
-              <li className="flex justify-between items-center">
-                <span>Whipped Cream</span>
-              </li>
-              <li className="flex justify-between items-center">
-                <span>Berries (Raspberries, Blueberries)</span>
-              </li>
-              <li className="flex justify-between items-center">
-                <span>Sweet and Spicy BBQ Sauce</span>
-              </li>
-              <li className="flex justify-between items-center">
-                <span>Ranch</span>
-              </li>
-              <li className="flex justify-between items-center">
-                <span>Hot Sauce</span>
-              </li>
-            </ul>
+              <div className="bg-white rounded-2xl p-8 shadow-md md:col-span-2 border-2 border-[#ff3130]">
+                <h2 className="text-3xl font-semibold text-[#1D4E89] mb-6 border-b-2 border-[#ff3130] pb-2">
+                  Extra Toppings & Sauces - All 20kr/each
+                </h2>
+                <ul className="space-y-4">
+                  <li className="flex justify-between items-center">
+                    <span>Maple Syrup</span>
+                  </li>
+                  <li className="flex justify-between items-center">
+                    <span>Jam / Sylt</span>
+                  </li>
+                  <li className="flex justify-between items-center">
+                    <span>Chocolate Sauce</span>
+                  </li>
+                  <li className="flex justify-between items-center">
+                    <span>Ice Cream</span>
+                  </li>
+                  <li className="flex justify-between items-center">
+                    <span>Whipped Cream</span>
+                  </li>
+                  <li className="flex justify-between items-center">
+                    <span>Berries (Raspberries, Blueberries)</span>
+                  </li>
+                  <li className="flex justify-between items-center">
+                    <span>Sweet and Spicy BBQ Sauce</span>
+                  </li>
+                  <li className="flex justify-between items-center">
+                    <span>Ranch</span>
+                  </li>
+                  <li className="flex justify-between items-center">
+                    <span>Hot Sauce</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="absolute bottom-8 right-8 w-1/3 max-w-[300px] h-auto overflow-hidden rounded-tl-[50px] shadow-xl image-container md:w-2/5 md:right-15 md:bottom-15 lg:w-3/5 lg:right-20 lg:bottom-20 xl:w-2/5 xl:right-25 xl:bottom-25"> 
-          <img
-            src="/images/screen5.jpg"
-            alt="Menu Highlight"
-            className="object-cover border-2 border-[#B22234] w-full h-full" 
-          />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <Link href="/food">
-              <button className="px-6 py-3 bg-red-700/80 hover:bg-red-700 text-white font-bold rounded-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
-                GO TO MENU
-              </button>
-            </Link>
-          </div>
-        </div>
       </div>
-    </div>
   );
 };
 
