@@ -17,13 +17,23 @@ const Opening = () => {
           Explore Our Menu!
         </p>
         <a href="/food">
-          <Button
-            className="p-4 w-32 rounded-full bg-transparent border border-[#F8F9FA] hover:bg-[#F8F9FA] hover:text-[#B22234]"
-            variant="outlined"
-            color="#F8F9FA"
-          >
-            Menu
-          </Button>
+        <Button
+  sx={{
+    padding: '16px',
+    width: '128px',
+    borderRadius: '9999px',
+    border: '2px solid #F8F9FA',
+    color: '#F8F9FA',
+    '&:hover': {
+      backgroundColor: '#F8F9FA',
+      color: '#B22234',
+    },
+  }}
+  variant="outlined"
+>
+  Menu
+</Button>
+
         </a>
       </div>
       <div className="relative z-10 max-w-7xl mx-auto mt-24 flex flex-col lg:flex-row justify-between items-start lg:items-center space-y-12 lg:space-y-0 lg:space-x-12">
