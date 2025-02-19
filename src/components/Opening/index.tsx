@@ -10,9 +10,10 @@ const Opening = () => {
     >
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
       <div className="relative z-10 text-center text-white mt-24 animate-in delay-0">
-        <h1 className="text-8xl font-semibold font-playfair">
-          {text}
-        </h1>
+      <h1 className="text-7xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold font-playfair mx-auto max-w-[90%]">
+  {text}
+</h1>
+
         <p className="mt-4 mb-4 text-pretty text-2xl animate-in delay-100">
           Explore Our Menu!
         </p>
