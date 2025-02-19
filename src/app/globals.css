@@ -19,11 +19,10 @@ html, body {
 }
 
 body {
-  background-image: url('/webbpage.jpeg'); 
+  background-image: url('/webbpage.jpeg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; 
-  font-family: 'Montserrat', sans-serif;
+  background-attachment: fixed;
 }
 
 * {
@@ -106,22 +105,6 @@ body {
       text-shadow: none;
   }
 }
-
-/* @keyframes glide-in-right {
-  0% {
-    opacity: 0;
-    transform: translateX(70px); 
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0); 
-  }
-}
-
-.animate-glide-in-right {
-  animation: glide-in-right 1.1s ease-out forwards;
-  animation-delay: 0.4s;
-} */
 
 .animate-in {
   opacity: 0;

@@ -5,7 +5,7 @@ const Opening = () => {
 
   return (
     <div
-      className="relative bg-cover bg-center min-h-screen p-6 lg:p-12 shadow-xl"
+      className="relative bg-cover bg-center -min-h-screen p-6 lg:p-12 shadow-xl"
       style={{ backgroundImage: "url('/images/webbpage.jpeg')" }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
@@ -18,33 +18,33 @@ const Opening = () => {
         </p>
         <a href="/food">
         <Button
-  sx={{
-    padding: '16px',
-    width: '128px',
-    borderRadius: '9999px',
-    border: '2px solid #F8F9FA',
-    color: '#F8F9FA',
-    '&:hover': {
-      backgroundColor: '#F8F9FA',
-      color: '#B22234',
-    },
-  }}
-  variant="outlined"
->
-  Menu
-</Button>
+            sx={{
+              padding: '16px',
+              width: '128px',
+              borderRadius: '9999px',
+              border: '2px solid #F8F9FA',
+              color: '#F8F9FA',
+              '&:hover': {
+                backgroundColor: '#F8F9FA',
+                color: '#B22234',
+              },
+            }}
+            variant="outlined"
+          >
+            Menu
+          </Button>
 
         </a>
       </div>
       <div className="relative z-10 max-w-7xl mx-auto mt-24 flex flex-col lg:flex-row justify-between items-start lg:items-center space-y-12 lg:space-y-0 lg:space-x-12">
-        <div className="relative flex flex-col items-center justify-center w-96 h-96 rounded-lg border-4 border-[#B22234] shadow-xl p-6 animate-in delay-200">
+        <div className="relative flex flex-col items-center justify-center w-full lg:w-96 h-96 rounded-lg border-4 border-[#B22234] shadow-xl p-4 sm:p-6 animate-in delay-200">
           <div
-            className="absolute top-4 px-10 py-3 text-3xl font-bold text-[#F8F9FA] tracking-wider rounded neon-text cursor-pointer"
+              className="absolute top-4 px-6 py-2 text-2xl sm:text-3xl font-bold text-[#F8F9FA] tracking-wider rounded neon-text cursor-pointer"
           >
             OPENING HOURS
           </div>
-          <ul className="text-[#F8F9FA] text-center space-y-4 text-lg mt-16">
-            <li>
+          <ul className="text-[#F8F9FA] text-center space-y-4 text-base sm:text-lg mt-8 sm:mt-16">
+          <li>
               <span className="font-bold">MON - TUE</span> CLOSED
             </li>
             <li>
