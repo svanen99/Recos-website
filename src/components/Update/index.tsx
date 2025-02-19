@@ -34,7 +34,7 @@ const StatusUpdate = () => {
       <section className="bg-white rounded-2xl shadow-xl w-full max-w-3xl p-10 border-[#B22234] border-2">
         <div className="flex flex-col items-center mb-8">
           <div className="">
-            <img src="/images/destination.gif" alt="Reco's Chicken and Waffles Logo" className="h-32 w-auto mb-4 custom-img" />
+            <img src="/images/location.gif" alt="Reco's Chicken and Waffles Logo" className="h-32 w-auto mb-4 custom-img" />
           </div>
 
           <h1 className="text-5xl font-extrabold text-[#B22234] mb-6 p-4 border-2 border-[#B22234] rounded-lg bg-white shadow-md transition-transform duration-300 hover:scale-105">

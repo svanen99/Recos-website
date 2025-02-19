@@ -14,10 +14,6 @@ html, body {
   font-family: 'Playfair Display', serif !important;
 }
 
-.custom-img {
-  filter: hue-rotate(170deg) saturate(15) brightness(1.1);
-}
-
 body {
   background-image: url('/webbpage.jpeg');
   background-size: cover;
