@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { Button } from "@mui/material";
 
 const FoodHero = () => {
     const menuItems = [
@@ -46,6 +47,44 @@ const FoodHero = () => {
                         Soul-satisfying flavors of Southern American cuisine right here in Sweden.
                     </p>
                     <span className="h-px w-1/3 bg-[#B22234]"></span>
+                    <div className="m-2">
+                    <a href="https://www.ubereats.com/se-en/store/recos-chicken-and-waffles/2Xr93KvNXcKq1q8TWMNvkA?srsltid=AfmBOoqd8cFWoUlqokUxHpxJKyJy46VMmAKVoLeXWmUWhsHlP51YjCls">
+                        <Button
+                            sx={{
+                            padding: '16px',
+                            width: '128px',
+                            borderRadius: '9999px',
+                            border: '2px solid #B22234',
+                            color: '#B22234',
+                            '&:hover': {
+                                backgroundColor: '#F8F9FA',
+                                color: '#B22234',
+                            },
+                            }}
+                            variant="outlined"
+                        >
+                            Uber Eats
+                        </Button>
+                        </a>
+                        <a href="https://www.foodora.se/restaurant/g24m/recos-chicken-and-waffles">
+                        <Button
+                            sx={{
+                            padding: '16px',
+                            width: '128px',
+                            borderRadius: '9999px',
+                            border: '2px solid #B22234',
+                            color: '#B22234',
+                            '&:hover': {
+                                backgroundColor: '#F8F9FA',
+                                color: '#B22234',
+                            },
+                            }}
+                            variant="outlined"
+                        >
+                            Foodora
+                        </Button>
+                        </a>
+                    </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                     {menuItems.map((item, index) => (
